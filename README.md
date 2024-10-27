@@ -21,6 +21,21 @@ having to be in the game. This allows for automation of the server and for the s
 
 ## Usage
 The plugin is designed to be extensible and allows for custom routes to be added to the server.
+Here are a few example cURL commands that can be used to interact with the server:
+```bash
+# Change the time of day to night
+curl -X POST http://localhost:8000/execute -d "time set night"
+```
+
+```bash
+# Teleport the player to the spawn point
+curl -X POST http://localhost:8000/execute -d "tp @p 0 100 0"
+```
+
+```bash
+# Give the player a diamond sword
+curl -X POST http://localhost:8000/execute -d "give @p minecraft:diamond_sword"
+```
 
 ## Contributing
 If you would like to contribute to this project please fork the repository and submit a pull request. For this repository:
